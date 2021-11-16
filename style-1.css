@@ -1,0 +1,173 @@
+	body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/background.jpg");
+}
+
+.navigatie ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navigatie li {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.navigatie a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888;
+    transition: .3s background-color;
+}
+
+.navigatie a:hover {
+    background-color: #e84c3d;
+}
+
+.navigatie a.actief {
+    background-color: #aaa;
+    color: #444;
+    cursor: default;
+}
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: grey;
+    text-align: center;
+}
+
+  .afbeelding {
+	transition: all 1.0s; 
+  }
+
+  .afbeelding:hover {
+	transform: scale(1.15);
+  }
+
+/* De table van de specificaties van mijn computer. LET OP: Om ervoor te zorgen dat de CSS niet té lang wordt heb ik dit gedeelte naast elkaar, i.p.v. onder elkaar, gezet. Aardig van mij hé 😊. */
+.table-pc  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.table-pc td{font-family:Century Gothic, sans-serif;font-size:14px;padding:6px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+.table-pc th{font-family:Century Gothic, sans-serif;font-size:14px;font-weight:normal;padding:6px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;border-top-width:1px;border-bottom-width:1px;}
+.table-pc .rij1{font-weight:bold;background-color:#e84c3d;color:#ffffff}
+.table-pc .rij2{font-weight:bold;background-color:#e84c3d;color:#ffffff;vertical-align:top}
+.table-pc .rij-item{vertical-align:top}
+/* Uiteraard is ook deze tabel netjes responsive vanaf 795 pixels breedte. */
+@media screen and (max-width: 795px) {.table-pc {width: auto !important;}.table-pc col {width: auto !important;}.table-pc-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+
+
+/* Fonts bij responsive breedte (<795px), deze overschrijdt de fonts bij normale breedte. */
+  h1 {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color:white;
+}
+
+  h2 {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color:white;
+}
+
+  a.terugnaarboven {
+    text-decoration: none;
+	color:white;
+}
+
+  a.table {
+    text-decoration: none;
+	color:black;
+}
+
+  p {
+    color:white;
+    text-align:center;
+    font-family: 'Century Gothic', sans-serif;
+    font-size:1.0em
+}
+
+/* Submenu's bij responsive breedte (<795px)*/
+  .navigatie li li {
+    font-size: .8em;
+}
+
+
+/*Dit onderdeel van de CSS zorgt ervoor dat het navigatie-menu responsive wordt vanaf 795 pixels breedte.*/
+@media screen and (min-width: 795px) {
+  .navigatie li {
+    width: 130px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .navigatie a {
+    border-bottom: none;
+  }
+
+  .navigatie ul li {
+    text-align: center;
+  }
+
+  .navigatie ul li a {
+    padding-left: 0;
+  }
+
+  /* Submenu's van het navigatie-menu */
+  .navigatie li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+  }
+
+  .navigatie li:hover ul {
+    display: block;
+  }
+
+  .navigatie li ul li {
+    display: block;
+  }
+
+/*Fonts bij normale breedte (>795px)*/
+  a.terugnaarboven {
+    text-decoration: none;
+	color:white;
+}
+
+  p {
+    color:white;
+    text-align:center;
+    font-family: 'Century Gothic', sans-serif;
+    font-size:1.2em
+}
+
+  h1 {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color:white;
+}
+
+  h2 {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 2.0em;
+    text-align: center;
+    color:white;
+}
